@@ -1,0 +1,20 @@
+[
+  {
+    "name": "join",
+    "path": "/join",
+    "component": "C:\\\\dhkim\\\\nuxt-init-dhkim\\\\pages\\\\join.vue",
+    "chunkName": "pages/join"
+  },
+  {
+    "name": "my",
+    "path": "/my",
+    "component": "C:\\\\dhkim\\\\nuxt-init-dhkim\\\\pages\\\\my.vue",
+    "chunkName": "pages/my"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\dhkim\\\\nuxt-init-dhkim\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]

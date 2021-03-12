@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-init-dhkim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "nuxt": {
+      "host": "192.168.0.57",
+      "port": "8092"
+    }
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nuxt": "^2.15.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.1"
+  }
+}

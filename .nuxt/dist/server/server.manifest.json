@@ -1,0 +1,29 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/footer-box.js": "components/footer-box.js",
+    "components/header-box.js": "components/header-box.js",
+    "components/modal-box.js": "components/modal-box.js",
+    "components/overlay.js": "components/overlay.js",
+    "components/page-box.js": "components/page-box.js",
+    "components/page-content.js": "components/page-content.js",
+    "components/timer.js": "components/timer.js",
+    "pages/index.js": "pages/index.js",
+    "pages/join.js": "pages/join.js",
+    "pages/my.js": "pages/my.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/footer-box.js": "components/footer-box.js.map",
+    "components/header-box.js": "components/header-box.js.map",
+    "components/modal-box.js": "components/modal-box.js.map",
+    "components/overlay.js": "components/overlay.js.map",
+    "components/page-box.js": "components/page-box.js.map",
+    "components/page-content.js": "components/page-content.js.map",
+    "components/timer.js": "components/timer.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/join.js": "pages/join.js.map",
+    "pages/my.js": "pages/my.js.map",
+    "server.js": "server.js.map"
+  }
+}

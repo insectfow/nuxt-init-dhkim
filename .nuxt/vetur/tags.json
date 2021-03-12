@@ -1,0 +1,23 @@
+{
+  "FooterBox": {
+    "description": "Auto imported from components/FooterBox.vue"
+  },
+  "HeaderBox": {
+    "description": "Auto imported from components/HeaderBox.vue"
+  },
+  "ModalBox": {
+    "description": "Auto imported from components/ModalBox.vue"
+  },
+  "Overlay": {
+    "description": "Auto imported from components/Overlay.vue"
+  },
+  "PageBox": {
+    "description": "Auto imported from components/PageBox.vue"
+  },
+  "PageContent": {
+    "description": "Auto imported from components/PageContent.vue"
+  },
+  "Timer": {
+    "description": "Auto imported from components/Timer.vue"
+  }
+}
