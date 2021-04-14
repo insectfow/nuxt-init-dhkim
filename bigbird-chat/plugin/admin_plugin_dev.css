@@ -1,0 +1,24 @@
+#livePlayer {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+.video-js {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.video-js .vjs-tech {
+    border-radius: 0;
+}
+.video-js .vjs-control-bar {
+    display: none;
+}
+.video-js .vjs-big-play-button {
+    background-color: coral;
+}
+
+#live-player_html5_api {
+    width: 100%;
+    height: 100%;
+}

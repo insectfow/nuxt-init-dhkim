@@ -1,0 +1,228 @@
+/* font-family CSS Style */
+// NotoSansKR
+@font-face {
+  font-family: "Noto Sans CJK KR Bold";
+  src: url("~@/assets/font/NotoSansKR-Bold.otf");
+}
+
+@font-face {
+  font-family: "Noto Sans CJK KR Light";
+  src: url("~@/assets/font/NotoSansKR-Light.otf");
+}
+
+@font-face {
+  font-family: "Noto Sans CJK KR Medium";
+  src: url("~@/assets/font/NotoSansKR-Medium.otf");
+}
+
+@font-face {
+  font-family: "Noto Sans CJK KR Regular";
+  src: url("~@/assets/font/NotoSansKR-Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+  unicode-range: U+0-10FFFF;
+}
+
+// Nanum-Gothic
+@font-face {
+  font-family: "Nanum-Barun-Gothic-UltraLight";
+  font-style: normal;
+  font-weight: 200;
+  src: url(../font/nanum/NanumBarunGothicUltraLight.eot);
+  src: local("Nanum Barun Gothic UltraLight"),
+    local("NanumBarunGothicUltraLight"),
+    url(../font/nanum/NanumBarunGothicUltraLight.eot?#iefix)
+      format("embedded-opentype"),
+    url(../font/nanum/NanumBarunGothicUltraLight.woff2) format("woff2"),
+    url(../font/nanum/NanumBarunGothicUltraLight.woff) format("woff"),
+    url(../font/nanum/NanumBarunGothicUltraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Nanum-Barun-Gothic-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../font/nanum/NanumBarunGothicLight.eot);
+  src: local("Nanum Barun Gothic Light"), local("NanumBarunGothicLight"),
+    url(../font/nanum/NanumBarunGothicLight.eot?#iefix)
+      format("embedded-opentype"),
+    url(../font/nanum/NanumBarunGothicLight.woff2) format("woff2"),
+    url(../font/nanum/NanumBarunGothicLight.woff) format("woff"),
+    url(../font/nanum/NanumBarunGothicLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Nanum-Barun-Gothic-normal";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/nanum/NanumBarunGothic.eot);
+  src: local("Nanum Barun Gothic"), local("NanumBarunGothic"),
+    url(../font/nanum/NanumBarunGothic.eot?#iefix) format("embedded-opentype"),
+    url(../font/nanum/NanumBarunGothic.woff2) format("woff2"),
+    url(../font/nanum/NanumBarunGothic.woff) format("woff"),
+    url(../font/nanum/NanumBarunGothic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Nanum-Barun-Gothic-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/nanum/NanumBarunGothicBold.eot);
+  src: local("Nanum Barun Gothic Bold"), local("NanumBarunGothicBold"),
+    url(../font/nanum/NanumBarunGothicBold.eot?#iefix)
+      format("embedded-opentype"),
+    url(../font/nanum/NanumBarunGothicBold.woff2) format("woff2"),
+    url(../font/nanum/NanumBarunGothicBold.woff) format("woff"),
+    url(../font/nanum/NanumBarunGothicBold.ttf) format("truetype");
+}
+
+/* Common CSS Style. */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans CJK KR Regular";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 ol,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0;
+  font-family: "Noto Sans CJK KR Regular";
+  font-weight: normal;
+  text-align: left;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000;
+}
+
+a,
+div,
+li,
+p,
+h1,
+h2,
+h3,
+span {
+  font-family: "Noto Sans CJK KR Regular";
+}
+
+em {
+  font-style: normal;
+}
+
+/* claerfix <-- float 쓸때 부모에게 클래스 주면 부모 height영역 살아남 */
+.clearfix:before,
+.clearfix:after {
+  display: block;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix:before {
+  *zoom: 1;
+}
+
+.none {
+  display: none !important;
+}
+
+.ml5 {
+  margin-left: 5px !important;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.select {
+  // user-select: none;
+}
+
+.back-block {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overtext {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.overtext2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 120px;
+}
+
+.overtext3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// scroll
+.scroll::-webkit-scrollbar {
+  width: 5px;
+  background: none;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+  border-radius: 6px;
+  height: 40px;
+}
+.scroll::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+.mb60 {
+  margin-bottom: 60px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mb20 {
+  margin-bottom: 20px !important;
+}

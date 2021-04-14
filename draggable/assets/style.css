@@ -1,0 +1,149 @@
+
+
+
+/* reset.css */
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, span, a, ul, ol, li, button, select, input, i, p, textarea, pre {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 16px;
+}
+h4 {
+    font-weight: 400;
+    font-size: 1.6em;
+    color: #000;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1em;
+    color: #000;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+ul > li {
+    font-size: 1em;
+}
+ul > li:last-child {
+}
+
+input {
+    width: 100%;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid #999A9C;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #000;
+}
+
+input::placeholder {
+    color: #999A9C;
+}
+
+input[type=checkbox], input[type=radio] {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    border: 2px solid #999A9C;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #fff;
+    resize: none;
+    background: #2B5338;
+    min-height: 100px;
+}
+
+button:focus, input:focus, textarea:focus {
+    outline: none;
+}
+
+button {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #999A9C;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #999A9C;
+}
+button:hover {
+    background: #F5E35D;
+    border: 1px solid #F5E35D;
+    color: #fff;
+}
+button:disabled {
+    cursor: default;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+}
+
+.nav {
+    padding: 0 16px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 50px;    
+    border-bottom: 1px solid #000;
+}
+.nav > li {
+    margin-right: 10px;
+}
+.nav > li:last-child {
+    margin-right: 0;
+}
+.nav > li > a {
+    display: block;
+    text-transform: uppercase;
+    padding: 5px;
+    border: 1px solid #000;
+    font-size: 14px;
+}
+.container {
+    position: fixed;
+    top: 50px;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+}
+
+.item {
+    inset: 10px auto auto 10px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+}
+
+.item.text-box {
+    
+}
+
+.data {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    background: #fff;
+}
+
+
+

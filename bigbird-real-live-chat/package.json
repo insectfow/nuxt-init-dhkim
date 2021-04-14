@@ -1,0 +1,35 @@
+{
+  "name": "bigbird-real-live-chat",
+  "version": "1.0.0",
+  "private": true,
+  "config": {
+    "nuxt": {
+      "host": "192.168.0.57",
+      "port": "8089"
+    }
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nuxt",
+    "build": "cross-env NODE_ENV=production nuxt build",
+    "buildStage": "cross-env NODE_ENV=stage nuxt build",
+    "deployStage": "cross-env NODE_ENV=stage firebase deploy -P dev",
+    "deploy": "cross-env NODE_ENV=production firebase deploy -P prod"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/moment": "^1.6.1",
+    "@nuxtjs/pwa": "^3.0.2",
+    "core-js": "^3.6.5",
+    "firebase": "^8.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "axios": "^0.21.0",
+    "cross-env": "^7.0.2",
+    "firebase-tools": "^8.14.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.0.5"
+  }
+}

@@ -1,0 +1,304 @@
+// color ---------------------------
+$mainColor: #1428a0;
+$defaultColor: #707070;
+$colorAAA: #aaa;
+// color ---------------------------
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+//font-family
+
+@mixin font-family($font) {
+  font-family: $font, "dotum", sans-serif;
+}
+
+div,
+a,
+p,
+textarea,
+input,
+li,
+button {
+  color: $defaultColor;
+  @include font-family("Noto Sans CJK KR Regular");
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+input:disabled {
+  background: #fff;
+}
+
+input::placeholder {
+  color: $colorAAA;
+}
+
+// input[type='checkbox'] {
+//     display: none !important;
+// }
+
+.loginBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background: #000;
+  z-index: 0;
+
+  background: linear-gradient(235deg, $mainColor, #2699fb, $mainColor);
+  background-size: 600% 600%;
+
+  -webkit-animation: bgMotion 30s ease infinite;
+  -moz-animation: bgMotion 30s ease infinite;
+  animation: bgMotion 30s ease infinite;
+}
+
+.card_wrap {
+  $bottomSize: 83px;
+}
+
+.contents.type2 {
+  #questionTab.box {
+    .top {
+      img {
+        margin-top: 59px;
+        margin-bottom: 12px;
+      }
+
+      input {
+        font-size: 14px;
+      }
+    }
+
+    .middle {
+      .tel {
+        color: $mainColor;
+        font-size: 20px;
+        margin-top: 52px;
+        margin-bottom: 13px;
+      }
+
+      .text {
+        font-size: 13px;
+        line-height: 23px;
+      }
+    }
+
+    .bottom {
+      .email {
+        margin-top: 52px;
+        font-size: 16px;
+        color: $mainColor;
+      }
+    }
+  }
+
+  #naverTab.box {
+    .top {
+      .title {
+        line-height: 38px;
+      }
+
+      img {
+        margin-top: 38px;
+        margin-bottom: 12px;
+      }
+    }
+
+    .middle {
+      .text {
+        margin-top: 82px;
+        line-height: 25px;
+        font-size: 16px;
+        @include font-family("NotoSansKR-Light");
+      }
+    }
+
+    .bottom {
+      input {
+        margin-top: 41px;
+        @include font-family("NotoSansKR-Medium");
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card_wrap {
+    $width: 315px;
+    $height: 593px;
+    width: $width;
+    height: $height;
+    margin-left: division_mid($width);
+    margin-top: division_mid($height);
+
+    .contents.type1 {
+      height: $height;
+      .top {
+        height: 518px !important;
+      }
+    }
+
+    .contents.type2 {
+      .box {
+        width: 280px;
+
+        .top {
+          height: 304px;
+          .title {
+            margin-top: 93px;
+            font-size: 20px !important;
+            line-height: 27px !important;
+          }
+        }
+        .middle {
+          height: 182px;
+        }
+      }
+      #questionTab.box {
+        .top {
+          img {
+            margin-top: 55px;
+            margin-bottom: 11px;
+            width: 54px;
+          }
+        }
+
+        .middle {
+          .tel {
+            margin-top: 44px;
+            font-size: 17px;
+            height: 22px;
+            line-height: 22px;
+          }
+
+          .text {
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+
+        .bottom {
+          .email {
+            margin-top: 22px;
+            font-size: 13px;
+          }
+        }
+      }
+
+      #naverTab.box {
+        .top {
+          img {
+            margin-top: 47px;
+            margin-bottom: 11px;
+            width: 54px;
+          }
+        }
+
+        .middle {
+          .text {
+            margin-top: 71px;
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+
+        .bottom {
+          .input-button {
+            margin-top: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .card_wrap .contents .icon-questions {
+    width: 20px;
+    height: 20px;
+    top: 30px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card_wrap {
+    .contents.type2 {
+      .box {
+        .top {
+          height: auto;
+          .title {
+            margin-top: 64px;
+          }
+        }
+      }
+      #questionTab.box {
+        .top {
+          img {
+            margin-top: 40px;
+          }
+          .input-button {
+            margin-bottom: 27px;
+          }
+        }
+
+        .middle {
+          .tel {
+            margin-top: 47px;
+          }
+        }
+
+        .bottom {
+          .email {
+            margin-top: 22px;
+            font-size: 13px;
+          }
+        }
+      }
+
+      #naverTab.box {
+        .top {
+          img {
+            margin-top: 27px;
+            margin-bottom: 11px;
+            width: 54px;
+          }
+        }
+
+        .middle {
+          .text {
+            margin-top: 71px;
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+
+        .bottom {
+          .input-button {
+            margin-top: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .card_wrap .contents .icon-questions {
+    width: 20px;
+    height: 20px;
+    top: 30px;
+    right: 20px;
+  }
+}

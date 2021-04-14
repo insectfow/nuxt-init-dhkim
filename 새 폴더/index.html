@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        let time = null;
+        let aaa = true;
+        let bbb = true;
+
+        if(aaa){
+            console.log(000);
+            time = setTimeout(() => {
+                console.log(111);
+            }, 1000)
+        }
+        setInterval(()=>{
+            if(bbb){
+                console.log(222);
+                clearTimeout(time);
+            }
+        },2000)
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

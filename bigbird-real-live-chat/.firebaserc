@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "prod": "bb-ops-group-live-commerce",
+    "dev": "bb-dev-group-live-commerce"
+  }
+}

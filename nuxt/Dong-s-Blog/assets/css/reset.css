@@ -1,0 +1,17 @@
+html, body {
+    font-size: 20px;
+}
+
+html, body, div, ul, li, ol, button, input, select, span, img, section, main, aside, footer, p, h1, h2, h3, h4, h5, h6, em, strong, table, tr, td, th, label, option {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+a, a:active {
+    text-decoration: none;
+    color: #000;
+}
